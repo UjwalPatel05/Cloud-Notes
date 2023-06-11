@@ -1,0 +1,10 @@
+.addNoteContainer {
+    width: 550px;
+    margin: auto;
+}
+
+@media screen and (max-width: 650px) {
+    .addNoteContainer {
+        width: 90%;
+    }
+}
