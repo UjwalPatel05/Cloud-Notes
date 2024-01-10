@@ -8,8 +8,6 @@ const SEC_KEY = process.env.SEC_KEY;
 const nodemailer = require("nodemailer");
 
 
-
-
 // Route 1: Create User
 // Path: /api/auth/createUser
 
@@ -183,7 +181,7 @@ Router.post("/sendResetPasswordLink", async(req, res) => {
 })
 
 
-// Route 5:Reset Password by Email
+// Route 6:Reset Password by Email
 // Path : /api/auth/resetUserPassword/:id/:token
 Router.put("/resetUserPassword/:id/:token", async(req, res) => {
     const { password } = req.body
